@@ -1,61 +1,47 @@
 # 💰 Expense Tracker
 
-A modern, responsive Expense Tracker built with **React.js**, **HTML**, **CSS**, and **JavaScript**. This application helps users manage their income and expenses, visualize spending patterns, and keep track of their financial health through an intuitive dashboard.
+A modern and responsive **Expense Tracker** built using **HTML**, **CSS**, and **JavaScript**. This application helps users manage their daily income and expenses, monitor their financial summary, and visualize spending habits through an easy-to-use interface.
 
-## 🚀 Live Demo
-
-🔗 https://your-live-demo-link.vercel.app
-
-## 📂 GitHub Repository
-
-🔗 https://github.com/yourusername/expense-tracker
+The project is designed as a beginner-friendly portfolio project that demonstrates core JavaScript concepts such as DOM manipulation, event handling, local storage, form validation, and CRUD operations.
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
-Expense Tracker is a beginner-friendly portfolio project that demonstrates fundamental frontend development concepts including:
+Managing personal finances becomes easier when you can record and organize your transactions. This Expense Tracker allows users to add, edit, delete, search, and filter transactions while automatically calculating their current balance, total income, and total expenses.
 
-- React Components
-- State Management using Context API
-- CRUD Operations
-- Local Storage
-- Data Visualization
-- Responsive Web Design
-
-All transaction data is stored locally in the browser, allowing users to retain their information even after refreshing the page.
+All data is stored in the browser using **Local Storage**, so users won't lose their transactions after refreshing the page.
 
 ---
 
 # ✨ Features
 
-### Dashboard
+## Dashboard
 
-- Current Balance
-- Total Income
-- Total Expenses
+- Display Current Balance
+- Display Total Income
+- Display Total Expenses
 - Financial Summary Cards
 
-### Transaction Management
+## Transaction Management
 
-- Add Transactions
-- Edit Transactions
-- Delete Transactions
-- Confirmation before deletion
+- Add New Transaction
+- Edit Existing Transaction
+- Delete Transaction
+- Delete Confirmation Modal
 
-### Search & Filter
+## Search & Filter
 
-- Search by title
+- Search transactions by title
 - Filter by category
 - Filter by transaction type
-- Filter by month
-- Sort by:
+- Sort transactions by:
   - Latest
   - Oldest
   - Highest Amount
   - Lowest Amount
 
-### Categories
+## Categories
 
 - Food
 - Shopping
@@ -64,94 +50,77 @@ All transaction data is stored locally in the browser, allowing users to retain 
 - Travel
 - Entertainment
 - Education
+- Healthcare
 - Others
 
-### Charts
+## Charts
 
 - Expense Distribution (Pie Chart)
 - Monthly Expenses (Bar Chart)
 
-### User Experience
+## User Experience
 
 - Responsive Design
 - Dark Mode
 - Toast Notifications
-- Empty State UI
-- Hover Animations
-- Smooth Transitions
+- Empty State Illustration
+- Smooth Animations
+- Hover Effects
 
-### Data Persistence
+## Data Storage
 
-- Local Storage support
-- Automatically saves transactions
+- Local Storage Support
+- Data persists after page refresh
 
-### Additional Features
+## Bonus Features
 
-- Budget Progress
+- Monthly Budget Tracker
+- Budget Progress Bar
 - Recent Transactions
-- Export Transactions (CSV)
-- Import Transactions (CSV)
+- Export Data as CSV
+- Import Transactions from CSV
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠️ Technologies Used
 
-| Technology | Purpose |
-|------------|----------|
-| React.js | Frontend Framework |
-| HTML5 | Structure |
-| CSS3 | Styling |
-| JavaScript (ES6+) | Logic |
-| Context API | State Management |
-| Local Storage | Data Persistence |
-| React Icons | Icons |
-| Recharts / Chart.js | Charts |
-| UUID | Unique IDs |
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Local Storage API
+- Chart.js (for charts)
+- Font Awesome (Icons)
 
 ---
 
-# 📁 Folder Structure
+# 📁 Project Structure
 
 ```
 expense-tracker/
 
-├── public/
+│── index.html
+│── style.css
+│── script.js
 │
-├── src/
-│   ├── assets/
-│   │
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Balance.jsx
-│   │   ├── SummaryCards.jsx
-│   │   ├── TransactionForm.jsx
-│   │   ├── TransactionList.jsx
-│   │   ├── TransactionItem.jsx
-│   │   ├── SearchBar.jsx
-│   │   ├── FilterBar.jsx
-│   │   ├── Charts.jsx
-│   │   └── EmptyState.jsx
-│   │
-│   ├── context/
-│   │   └── ExpenseContext.jsx
-│   │
-│   ├── hooks/
-│   │   └── useLocalStorage.js
-│   │
-│   ├── utils/
-│   │   ├── calculations.js
-│   │   └── formatCurrency.js
-│   │
-│   ├── pages/
-│   │   └── Dashboard.jsx
-│   │
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
+├── assets/
+│   ├── images/
+│   └── icons/
 │
-├── package.json
-├── README.md
-└── vite.config.js
+├── css/
+│   ├── responsive.css
+│   ├── animations.css
+│   └── variables.css
+│
+├── js/
+│   ├── app.js
+│   ├── storage.js
+│   ├── ui.js
+│   ├── validation.js
+│   ├── charts.js
+│   ├── filters.js
+│   └── utils.js
+│
+└── README.md
 ```
 
 ---
@@ -159,131 +128,82 @@ expense-tracker/
 # 📸 Screenshots
 
 ## Dashboard
-
-_Add screenshot here_
+<img width="1896" height="661" alt="image" src="https://github.com/user-attachments/assets/6c1d8918-2a60-4d52-9bbf-cb902a79357b" />
 
 ---
 
 ## Add Transaction
 
-_Add screenshot here_
+<img width="665" height="748" alt="image" src="https://github.com/user-attachments/assets/5cf23b9e-23fa-459f-a4a3-435633263a80" />
 
 ---
 
-## Charts
-
-_Add screenshot here_
-
----
-
-## Dark Mode
-
-_Add screenshot here_
+## Transaction List
+<img width="1608" height="843" alt="image" src="https://github.com/user-attachments/assets/2a9c849b-b55d-43f3-bda5-0a740c2ae9b6" />
 
 ---
 
-# ⚙️ Installation
+# ⚙️ Getting Started
 
-Clone the repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/expense-tracker.git
 ```
 
-Navigate into the project
+## Navigate to the Project
 
 ```bash
 cd expense-tracker
 ```
 
-Install dependencies
+## Run the Project
 
-```bash
-npm install
-```
+Simply open the **index.html** file in your browser.
 
-Start the development server
-
-```bash
-npm run dev
-```
-
-Open your browser and visit
-
-```
-http://localhost:5173
-```
+Or, if you're using **VS Code**, install the **Live Server** extension and click **Go Live**.
 
 ---
 
-# 📦 Build for Production
+# 💾 Local Storage
 
-```bash
-npm run build
-```
+This application stores all transaction data in the browser using **Local Storage**.
 
-Preview production build
-
-```bash
-npm run preview
-```
-
----
-
-# 💾 Data Storage
-
-This project uses **Local Storage** to persist transaction data.
-
-No backend or database is required.
-
-Refreshing the page will not remove your transactions.
+Your transactions remain saved even after refreshing or reopening the browser.
 
 ---
 
 # 📊 Future Improvements
 
-- User Authentication
-- Cloud Database Integration
-- Firebase Backend
+- User Login System
+- Backend Integration
+- Cloud Database
+- Multiple Currency Support
 - Expense Analytics
-- Multiple Wallets
-- Income Goals
-- Savings Tracker
 - Recurring Transactions
-- Currency Selection
-- PDF Report Generation
-- Notifications
-- PWA Support
+- PDF Report Export
+- Savings Goals
+- Monthly Reports
+- Progressive Web App (PWA)
 
 ---
 
 # 🎯 Learning Outcomes
 
-This project demonstrates knowledge of:
+This project helped me understand:
 
-- React Fundamentals
-- Functional Components
-- Props
-- State Management
-- Context API
-- React Hooks
-- Component Reusability
-- CRUD Operations
+- HTML Page Structure
+- CSS Layouts and Responsive Design
+- JavaScript Fundamentals
+- DOM Manipulation
+- Event Handling
 - Form Validation
-- Local Storage
-- Responsive Design
-- Data Visualization
-- Project Deployment
-
----
-
-# 🌐 Deployment
-
-This application can be deployed using:
-
-- Vercel
-- Netlify
-- GitHub Pages
+- CRUD Operations
+- Arrays and Objects
+- Local Storage API
+- Chart Integration
+- Code Organization
+- Responsive UI Design
 
 ---
 
@@ -316,22 +236,15 @@ git push origin feature/new-feature
 
 ---
 
-# 📝 License
-
-This project is licensed under the MIT License.
 
 ---
 
 # 👨‍💻 Author
 
-**Your Name**
+**Aditi Walwekar**
 
-GitHub: https://github.com/yourusername
-
-LinkedIn: https://linkedin.com/in/yourusername
-
-Portfolio: https://yourportfolio.com
+- GitHub: https://github.com/aditiwalwekarcode
 
 ---
 
-## ⭐ If you found this project useful, please consider giving it a star on GitHub!
+## ⭐ If you found this project helpful, consider giving it a star on GitHub!
